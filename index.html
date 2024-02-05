@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <title>Trucking Times</title>
     </head>
     <body>
@@ -61,6 +68,10 @@
                 </div>
 
                 <div class="navigation">
+                    <div class="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+
                     <div class="navigation_list">
                         <ul>
                             <li><a href="#about"> About us</a></li>
@@ -157,11 +168,71 @@
             </div>
         </header>
 
+        <div class="mobile__title">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Trucking Times</h1>
+                    <p>
+                        Is an active participant in the transport and logistics
+                        market of USA, providing a full range of services for
+                        the transportation of goods of any complexity.
+                    </p>
+
+                    <div class="mobile-btn">
+                        <button>Driver applicaton</button>
+                        <button>Request a quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-info">
+            <div class="hero__info">
+                <div class="wrapper">
+                    <p>Our fun facts</p>
+                    <div class="hero__info-content">
+                        <div>
+                            <p>49 073 777 +</p>
+                            <span>Miles per year</span>
+                        </div>
+                        <div>
+                            <p>20 000 +</p>
+                            <span>Delivered loads per year</span>
+                        </div>
+                        <div>
+                            <p>200 +</p>
+                            <span>Happy Customers</span>
+                        </div>
+                        <div>
+                            <p>100 +</p>
+                            <span>Employees</span>
+                        </div>
+                    </div>
+
+                    <div class="last-years">
+                        <img
+                            src="./assets/images/icons/icon-dots.svg"
+                            width="431"
+                            height="15"
+                            alt="image"
+                        />
+                        <div class="years">
+                            <span>2017</span>
+                            <span>2018</span>
+                            <span>2019</span>
+                            <span>2020</span>
+                            <span>2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="about__section" id="about">
             <div class="wrapper">
                 <div class="section-left">
                     <h3>About us</h3>
-                    <p class="praragraph">
+                    <p class="praragraph mobile">
                         Trucking-Times is an active participant in the transport
                         and logistics market of USA, providing a full range of
                         services for the transportation of goods of any
@@ -186,27 +257,20 @@
                 </div>
             </div>
 
-            <div class="about_section-right">
-                <img
-                    src="./assets/images/img/aboutUs.png"
-                    alt="image"
-                   
-                />
+            <div class="section-right">
+                <img src="./assets/images/img/aboutUs.png" alt="image" />
             </div>
         </section>
 
         <section class="wedo__section">
-            <div class="wedo_section-left">
-                <img
-                    src="./assets/images/img/whatWeDo.png"
-                    alt="image"
-                />
+            <div class="section-left">
+                <img src="./assets/images/img/whatWeDo.png" alt="image" />
             </div>
 
             <div class="wrapper">
                 <div class="section-right">
                     <h3>What we do</h3>
-                    <p class="praragraph">
+                    <p class="praragraph mobile">
                         One of «the» most reliable Truckload Fleet in «the»
                         industry who successfully operates the nation’s ethical
                         dry van trucking and shipping truckload fleet by
@@ -308,28 +372,32 @@
                         <p>Trucking Times INC VALUES</p>
                     </div>
 
-                    <ul>
-                        <li>Winning Attitude</li>
-                        <li>Communication</li>
-                        <li>Development</li>
-                        <li>Teamwork</li>
-                    </ul>
+                    <div class="career-list">
+                        <ul>
+                            <li>Winning Attitude</li>
+                            <li>Communication</li>
+                            <li>Development</li>
+                            <li>Teamwork</li>
+                        </ul>
 
-                    <ul>
-                        <li>Safety</li>
-                        <li>Ethics</li>
-                        <li>Respect</li>
-                        <li>Balance</li>
-                    </ul>
+                        <ul>
+                            <li>Safety</li>
+                            <li>Ethics</li>
+                            <li>Respect</li>
+                            <li>Balance</li>
+                        </ul>
 
-                    <ul>
-                        <li>Change</li>
-                        <li>Initiative</li>
-                        <li>Accountability</li>
-                        <li>Charity</li>
-                    </ul>
+                        <ul>
+                            <li>Change</li>
+                            <li>Initiative</li>
+                            <li>Accountability</li>
+                            <li>Charity</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
 
+            <div class="wrapper">
                 <div class="section__career-card">
                     <div class="card-content">
                         <div class="vector">
@@ -353,35 +421,68 @@
                     <div class="card-img">
                         <img
                             src="./assets/images/img/career-card-img.png"
-                            width="810"
-                            height="450"
-                            alt="imagee"
+                            alt="image"
                         />
                     </div>
                 </div>
+            </div>
 
+            <div class="outsiter">
+                <div class="section__career-card">
+                    <div class="wrapper">
+                        <div class="card-content">
+                            <div class="vector">
+                                <img
+                                    src="./assets/images/img/vector-up.png"
+                                    width="108"
+                                    height="87"
+                                    alt="img"
+                                />
+                            </div>
+
+                            <div class="title">
+                                <h3>Driving careers</h3>
+                                <p>
+                                    Limited time - earn an extra <br />
+                                    $60,000 in your first year!
+                                </p>
+                                <button>Get online application</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-img">
+                        <img
+                            src="./assets/images/img/career-card-img.png"
+                            alt="image"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
                 <div class="section__career-partners">
                     <h3>Our Partners</h3>
 
                     <div class="content">
                         <img
-                            src="./assets/images/img/partner1.png"
+                            src="./assets/images/img/partner1.svg"
                             alt="image"
                         />
                         <img
-                            src="./assets/images/img/partner2.png"
+                            src="./assets/images/img/partner2.svg"
                             alt="image"
                         />
                         <img
-                            src="./assets/images/img/partner3.png"
+                            src="./assets/images/img/partner3.svg"
                             alt="image"
                         />
                         <img
-                            src="./assets/images/img/partner4.png"
+                            src="./assets/images/img/partner4.svg"
                             alt="image"
                         />
                         <img
-                            src="./assets/images/img/partner5.png"
+                            src="./assets/images/img/partner5.svg"
                             alt="image"
                         />
                     </div>
@@ -438,30 +539,36 @@
                         </div>
                     </div>
 
-                    <div class="footer-contact">
-                        <span>Address</span>
-                        <p class="praragraph">
-                            730 E Saint Charles Rd, Suite 102 <br />
-                            Lombard IL 60148, USA
-                        </p>
-                    </div>
+                    <div class="contact-body">
+                        <div class="contact-top">
+                            <div class="footer-contact">
+                                <span>Address</span>
+                                <p class="praragraph">
+                                    730 E Saint Charles Rd, Suite 102 <br />
+                                    Lombard IL 60148, USA
+                                </p>
+                            </div>
 
-                    <div class="footer-contact">
-                        <span>Email</span>
-                        <p class="praragraph">
-                            dispatch@truckingtimes.pro <br />
-                            careers@truckingtimes.pro
-                        </p>
-                    </div>
+                            <div class="footer-contact">
+                                <span>Email</span>
+                                <p class="praragraph">
+                                    dispatch@truckingtimes.pro <br />
+                                    careers@truckingtimes.pro
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="footer-contact">
-                        <span>Phone</span>
-                        <p class="praragraph">+1 (217) 247 4748</p>
-                    </div>
+                        <div class="contact-bot">
+                            <div class="footer-contact">
+                                <span>Phone</span>
+                                <p class="praragraph">+1 (217) 247 4748</p>
+                            </div>
 
-                    <div class="footer-contact">
-                        <span>We work</span>
-                        <p class="praragraph">Daily 24/7</p>
+                            <div class="footer-contact">
+                                <span>We work</span>
+                                <p class="praragraph">Daily 24/7</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

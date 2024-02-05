@@ -32,6 +32,10 @@ header {
             height: 100%;
             gap: 50px;
 
+            .hamburger-menu {
+                display: none;
+            }
+
             &_list {
                 padding: 33px 0;
             }
@@ -172,7 +176,228 @@ header {
     }
 }
 
+.mobile-info {
+    display: none;
+}
+.mobile__title {
+    display: none;
+}
 
-@media (max-width: 1500px) {
-    
+@media (max-width: 1152px) {
+    header {
+        .navbar {
+            .navbar__contact {
+                padding-left: 46px;
+            }
+
+            .navigation {
+                .hamburger-menu {
+                    display: block;
+                    font-size: 30px;
+                }
+
+                .navigation_list {
+                    display: none;
+                }
+            }
+        }
+
+        .hero {
+            &__info {
+                .last-years {
+                    padding-bottom: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .navbar {
+            &__contact {
+                padding-left: 34px;
+
+                &-links {
+                    background: #000;
+                    display: none;
+                }
+
+                &-phone {
+                    display: none;
+                }
+            }
+        }
+
+        .hero {
+            &__title {
+                width: 80%;
+
+                h1 {
+                    font-size: 24px;
+                    font-weight: 800;
+                    line-height: 29px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                    margin-bottom: 30px;
+                }
+
+                .hero-btn {
+                    padding-bottom: 90px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .hero__info {
+                display: none;
+            }
+        }
+    }
+
+    .mobile-info {
+        display: block;
+
+        .hero__info {
+            background: #212529;
+            padding: 50px 0;
+            p {
+                color: $primaryColor;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 29px;
+                margin-bottom: 30px;
+            }
+
+            &-content {
+                @include dFlex(space-between);
+                gap: 50px;
+                margin-bottom: 30px;
+
+                p {
+                    font-size: 17px;
+                    color: rgb(4, 255, 20);
+                    margin-bottom: 10px;
+                }
+            }
+
+            .last-years {
+                img {
+                    margin-bottom: 10px;
+                    margin-left: 12px;
+                }
+
+                .years {
+                    @include dFlex(flex-start);
+                    gap: 67px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    header {
+        .navbar {
+            .navbar__contact {
+                padding: 20px 0 20px 1rem;
+                a {
+                    img {
+                        max-width: 168px;
+                        max-height: 30px;
+                    }
+                }
+            }
+
+            .navigation {
+                .hamburger-menu {
+                    padding-right: 1rem;
+                }
+
+                .header__button {
+                    display: none;
+                }
+            }
+        }
+
+        .hero {
+            height: 120px;
+
+            &__title {
+                display: none;
+            }
+        }
+    }
+
+    .mobile__title {
+        display: block;
+        background: #212529;
+
+        .title {
+            padding-top: 30px;
+
+            h1 {
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 29px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 130%;
+                margin-bottom: 20px;
+            }
+
+            .mobile-btn {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                button {
+                    width: 100%;
+                    @include primaryBtn;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 130%;
+
+                    
+                }
+
+                button:hover {
+                    background: #6A369C;
+                }
+            }
+        }
+    }
+
+    .mobile-info {
+
+        .hero__info {
+            padding: 30px 0;
+
+            &-content {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            }
+
+            .last-years {
+                 img {
+                    max-width: 315px;
+                 }
+
+                 .years {
+                    gap: 43px;
+
+                    span {
+                        font-size: 15px;
+                    }
+                 }
+            }
+        }
+    }
 }
